@@ -11,10 +11,10 @@ router.post("/admin", async (req, res) => {
         
         var AdminName = req.body.AdminName
         var password = req.body.password
-        console.log(password);
-        const user = await AdminData.findOne({ password: password })
+        // console.log(password);
+        const user = await AdminData.find({ password: password })
         if (!user) {
-            res.send("Invalid Credentials")
+            res.send("not allowed")
         } else {
             res.send("Welcome Admin")
         }
