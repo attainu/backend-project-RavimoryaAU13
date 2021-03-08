@@ -61,11 +61,11 @@ router.post('/', upload.single('File'), async (req, res) => {
                     req.body.requestedUser=[];
                    db.collection('petsinfo').insertOne(req.body, (error, addedPetinfo) => {
                        assert.equal(null, error);
-                        //adding newAdded petid into user collection inplace of sadabahmad req.session.username  
+                         
                         db.collection('userinfo').updateOne({username:req.session.username},{$push:{petAdded:addedPetinfo.insertedId}},function(error){
                            assert.equal(null,error);
                         });
-                        // inplace of sadabahmad req.session.username 
+                        // inplace of ravi req.session.username 
                         res.redirect(`/userprofile/${req.session.username}`);
                    
                 });
