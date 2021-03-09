@@ -26,7 +26,7 @@ var upload = multer({
     },
     //setting limit of images upload size
     limits: {
-        fileSize: 1024 * 1024 * 2 //maximum size of image is 2mb
+        fileSize: 1024 * 1024 * 5 //maximum size of image is 5mb
     }
 })
 
