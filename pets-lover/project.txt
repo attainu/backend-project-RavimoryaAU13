@@ -1,0 +1,37 @@
+
+We had made a petlover App where we can check the pets available and 
+in further update will be adding buying and adoption option as well.
+
+
+Homepage:
+In Home page we have addded the follwing feature
+
+Home
+login
+signup
+Dogbreeds
+Cat breeds
+Admin login 
+
+
+Sign up page will let user sign up for the website and there a option to 
+login with google and facebook added for future development
+
+All the user data will be added to Mongo atlas 
+
+cat breed and Dog breed we have used cat and dog api to render the data
+where the details of each breed will be provided.
+
+once the user has logged in it will take to the buying and check option
+
+where user can add pet in car and buy (payment option will be added in future)
+
+
+Diffrent Api has been created for pets, user, admin and given the acesss 
+accordingly 
+
+there is much more to do but the time allowed us to complete only that much.
+
+
+Thank you 
+Ravi and Aman
